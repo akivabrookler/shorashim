@@ -1,0 +1,162 @@
+﻿html {
+    height: 100%;
+}
+
+.body-scrollable {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content-scrollable {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.body-screen {
+    padding-top: 50px;
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden!important;
+}
+
+.body-content-screen {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+footer {
+    text-align: center;
+}
+
+#CombinedAncestorDescendantChartId {
+    width: 10000px;
+    height: 10000px;
+    margin-left: 10px;
+}
+
+#AncestorChartId {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#AncestorChartId .google-visualization-orgchart-node {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#AncestorChartId table {
+    border-collapse: inherit;
+    margin-right: 0px;
+}
+
+#DescendantChartId table {
+    border-collapse: inherit;
+    margin-left: 0px;
+}
+
+.person-container-F {
+  border: 2px solid #eab0d4!important;
+  background-color: #ffe8f2!important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffe8f2), to(#eec8e2))!important;
+}
+
+.person-container-M {
+  border: 2px solid #b0d4ea!important;
+  background-color: #e8f2ff!important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e8f2ff), to(#c8e2ee))!important;
+}
+
+/*Blog Style for Visitors*/
+    /*Blog Header*/
+.about-developer-blog-header {
+    vertical-align: top;
+    font-size: 30px;
+    color: crimson;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    
+    /*Blog Entry*/
+    .about-developer-blog-entry {
+        vertical-align:top;
+        border-style: solid;
+        border-color: black;
+        border-radius: 5px;
+        font-family: Arial;
+        color: black;
+        background: white;
+        font-size: 13px;
+}
+    /*Blog Date*/
+.about-developer-blog-date {
+    vertical-align: top;
+    padding-top: 5px;
+    font-size: 16px;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+}
+/*About Developer Page Proportions*/
+.about-developer-screen {
+    width: 100%;
+}
+
+.about-developer-info {
+    width: 65%;
+}
+    
+.about-developer-blog {
+    width: 35%;
+}
+
+/*Blog Style for Own Page*/
+    /*Blog Entry*/
+    .creating-new-blog-entry {
+        vertical-align: top;
+        border-style: solid;
+        border-color: black;
+        border-radius: 5px;
+        font-family: Arial;
+        color: black;
+        background: white;
+        font-size: 13px;
+    }
+#HomeImage{
+        background-color: white;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding-bottom: 15px;
+}
+.dhxform_obj_dhx_skyblue div.dhxform_txt_label2{
+    color: black!important;
+}
+#chartContainer .dhx_cell_editor {
+    left: 300px !important;
+    top: 30px !important;
+}

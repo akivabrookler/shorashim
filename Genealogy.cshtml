@@ -1,0 +1,31 @@
+﻿@Scripts.Render("~/bundles/genealogy")
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/redmond/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="/Content/psd3.css" />
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/Scripts/d3.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.5.1/jQuery.print.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
+
+
+<script type="text/javascript">
+    @Html.GenerateAntiForgeryToken();
+
+    var body = $("body");
+    body.removeClass("body-scrollable");
+    body.addClass("body-screen");
+
+    var bodyContainer = $("#BodyContainerId");
+    bodyContainer.removeClass("body-content-scrollable");
+    bodyContainer.removeClass("container");
+    bodyContainer.addClass("body-content-screen");
+
+    google.charts.load('current', { packages: ["orgchart"] });
+
+    dhtmlxEvent(window, "load", function () {
+        new this.Genealogy("BodyContainerId");
+    });
+</script>
+

@@ -1,0 +1,124 @@
+﻿/*All Pages*/
+/* --- Background Color*/
+body {
+    background-color: #72C1FE;
+}
+/* --- Tables*/
+table {
+    background-color: white;
+}
+
+/* About Individual Page */
+/* --- Individuals Name*/   
+.about_name {
+    font-size: 450%;
+    font-family: 'Segoe Script';
+    color: midnightblue;
+}
+/* --- Details Font*/
+.about_me{
+    font-family: 'Franklin Gothic';
+}
+.about_profession{
+    font-family: 'Franklin Gothic';
+}
+.about_hobbies{
+    font-family: 'Franklin Gothic';
+}
+
+/*About Developers Page*/
+/* --- Shadow Outline content Team Pictures*/
+.about-team-member-picture {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+}
+
+.about-team-member-picture:before{
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: white;
+    background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+    z-index: 1000;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+}
+.about-team-member-picture:hover:before{
+    width: 25px;
+    height: 25px;
+}
+.about-team-member-picture{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 5px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+.about-team-member-picture:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active {
+    box-shadow: 17px 17px 17px rgba(0, 0, 0, 0.6);
+}
+/* --- Team Member Names*/
+.about-team-member a {
+    font-size: 150px;
+    color: crimson;
+    text-decoration: none;
+    font-family: 'Segoe Script';
+}
+.about-team-member-name{
+    margin-top:-200px;
+}
+/* --- Background for Team Member Picture*/
+.about-team-member-picture{
+    background-color: crimson;
+}
+/* --- Flipping Animation*/
+.about-team-member-name{
+    transform:rotateY(0deg);
+    backface-visibility: hidden;
+    transition: transform 0.5s linear 0s;
+}
+.about-team-member-picture {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform 0.5s linear 0s;
+}
+.picture-and-name:hover > .about-team-member-name{
+    transform: rotateY(-180deg);
+}
+.picture-and-name:hover > .about-team-member-picture {
+    transform: rotateY(0deg);
+}
+
+/*Blog Date Flip*/
+.about-developer-blog-date {
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: transform 0.5s linear 0s;
+}
+
+.about-developer-blob-entry-form {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform 0.5s linear 0s;
+}
+
+.about-developer-blog-entries:hover > .about-developer-blob-entry-form {
+    transform: rotateY(0deg);
+}
+
